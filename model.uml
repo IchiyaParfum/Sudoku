@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_vmj7sF5hEeinldGX_T-NDg">
+  <packagedElement xmi:type="uml:Actor" xmi:id="_SK25YF5mEeinldGX_T-NDg" name="Benutzer">
+    <eAnnotations xmi:id="_SK25YV5mEeinldGX_T-NDg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_SK25Yl5mEeinldGX_T-NDg" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_g9PvoF5mEeinldGX_T-NDg" name=" Sudoku" useCase="_iz-nwF5mEeinldGX_T-NDg _RH6OoF5mEeinldGX_T-NDg _P_9IEF5mEeinldGX_T-NDg _ThnbgF5nEeinldGX_T-NDg _ss14YF5oEeinldGX_T-NDg _LxteoF5pEeinldGX_T-NDg _PuXhcF5pEeinldGX_T-NDg _VlDA8F5pEeinldGX_T-NDg _fxbf8F5qEeinldGX_T-NDg">
+    <ownedUseCase xmi:id="_RH6OoF5mEeinldGX_T-NDg" name="Speichere Spiel" subject="_g9PvoF5mEeinldGX_T-NDg">
+      <include xmi:id="_c9tigF5nEeinldGX_T-NDg" addition="_ThnbgF5nEeinldGX_T-NDg"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:id="_P_9IEF5mEeinldGX_T-NDg" name="Zeige Lösung" subject="_g9PvoF5mEeinldGX_T-NDg"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_iz-nwF5mEeinldGX_T-NDg" name="Lade Spiel" subject="_g9PvoF5mEeinldGX_T-NDg">
+      <include xmi:id="_b0aYIF5nEeinldGX_T-NDg" addition="_ThnbgF5nEeinldGX_T-NDg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ThnbgF5nEeinldGX_T-NDg" name="Kontrolliere Eingaben" subject="_g9PvoF5mEeinldGX_T-NDg"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ss14YF5oEeinldGX_T-NDg" name="Starte Sudokulöser" subject="_g9PvoF5mEeinldGX_T-NDg">
+      <include xmi:id="_V5NdoF5qEeinldGX_T-NDg" addition="_ThnbgF5nEeinldGX_T-NDg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_LxteoF5pEeinldGX_T-NDg" name="Neustart des Spiels" subject="_g9PvoF5mEeinldGX_T-NDg"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_PuXhcF5pEeinldGX_T-NDg" name="Setze Eingabe zurück" subject="_g9PvoF5mEeinldGX_T-NDg"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_VlDA8F5pEeinldGX_T-NDg" name="Umschalten Eingabemodus" subject="_g9PvoF5mEeinldGX_T-NDg"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_fxbf8F5qEeinldGX_T-NDg" name="" subject="_g9PvoF5mEeinldGX_T-NDg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_uoce4F5nEeinldGX_T-NDg" memberEnd="_uolo0F5nEeinldGX_T-NDg _uolo0V5nEeinldGX_T-NDg">
+    <ownedEnd xmi:id="_uolo0F5nEeinldGX_T-NDg" type="_SK25YF5mEeinldGX_T-NDg" association="_uoce4F5nEeinldGX_T-NDg"/>
+    <ownedEnd xmi:id="_uolo0V5nEeinldGX_T-NDg" type="_iz-nwF5mEeinldGX_T-NDg" association="_uoce4F5nEeinldGX_T-NDg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_vn6X0F5nEeinldGX_T-NDg" memberEnd="_vn6X0V5nEeinldGX_T-NDg _vn6X0l5nEeinldGX_T-NDg">
+    <ownedEnd xmi:id="_vn6X0V5nEeinldGX_T-NDg" type="_SK25YF5mEeinldGX_T-NDg" association="_vn6X0F5nEeinldGX_T-NDg"/>
+    <ownedEnd xmi:id="_vn6X0l5nEeinldGX_T-NDg" type="_RH6OoF5mEeinldGX_T-NDg" association="_vn6X0F5nEeinldGX_T-NDg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wUctsF5nEeinldGX_T-NDg" memberEnd="_wUctsV5nEeinldGX_T-NDg _wUctsl5nEeinldGX_T-NDg">
+    <ownedEnd xmi:id="_wUctsV5nEeinldGX_T-NDg" type="_SK25YF5mEeinldGX_T-NDg" association="_wUctsF5nEeinldGX_T-NDg"/>
+    <ownedEnd xmi:id="_wUctsl5nEeinldGX_T-NDg" type="_ThnbgF5nEeinldGX_T-NDg" association="_wUctsF5nEeinldGX_T-NDg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_yME9sF5nEeinldGX_T-NDg" memberEnd="_yME9sV5nEeinldGX_T-NDg _yME9sl5nEeinldGX_T-NDg">
+    <ownedEnd xmi:id="_yME9sV5nEeinldGX_T-NDg" type="_SK25YF5mEeinldGX_T-NDg" association="_yME9sF5nEeinldGX_T-NDg"/>
+    <ownedEnd xmi:id="_yME9sl5nEeinldGX_T-NDg" type="_P_9IEF5mEeinldGX_T-NDg" association="_yME9sF5nEeinldGX_T-NDg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_uw-6YF5oEeinldGX_T-NDg" memberEnd="_uw-6YV5oEeinldGX_T-NDg _uw-6Yl5oEeinldGX_T-NDg">
+    <ownedEnd xmi:id="_uw-6YV5oEeinldGX_T-NDg" type="_ss14YF5oEeinldGX_T-NDg" association="_uw-6YF5oEeinldGX_T-NDg"/>
+    <ownedEnd xmi:id="_uw-6Yl5oEeinldGX_T-NDg" type="_SK25YF5mEeinldGX_T-NDg" association="_uw-6YF5oEeinldGX_T-NDg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_rU700F5pEeinldGX_T-NDg" memberEnd="_rU700V5pEeinldGX_T-NDg _rU700l5pEeinldGX_T-NDg">
+    <ownedEnd xmi:id="_rU700V5pEeinldGX_T-NDg" type="_P_9IEF5mEeinldGX_T-NDg" association="_rU700F5pEeinldGX_T-NDg"/>
+    <ownedEnd xmi:id="_rU700l5pEeinldGX_T-NDg" type="_ThnbgF5nEeinldGX_T-NDg" association="_rU700F5pEeinldGX_T-NDg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_uLubwF5pEeinldGX_T-NDg" memberEnd="_uLubwV5pEeinldGX_T-NDg _uLubwl5pEeinldGX_T-NDg">
+    <ownedEnd xmi:id="_uLubwV5pEeinldGX_T-NDg" type="_SK25YF5mEeinldGX_T-NDg" association="_uLubwF5pEeinldGX_T-NDg"/>
+    <ownedEnd xmi:id="_uLubwl5pEeinldGX_T-NDg" type="_PuXhcF5pEeinldGX_T-NDg" association="_uLubwF5pEeinldGX_T-NDg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wuG48F5pEeinldGX_T-NDg" memberEnd="_wuG48V5pEeinldGX_T-NDg _wuG48l5pEeinldGX_T-NDg">
+    <ownedEnd xmi:id="_wuG48V5pEeinldGX_T-NDg" type="_VlDA8F5pEeinldGX_T-NDg" association="_wuG48F5pEeinldGX_T-NDg"/>
+    <ownedEnd xmi:id="_wuG48l5pEeinldGX_T-NDg" type="_SK25YF5mEeinldGX_T-NDg" association="_wuG48F5pEeinldGX_T-NDg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0T1CcF5pEeinldGX_T-NDg" memberEnd="_0T1CcV5pEeinldGX_T-NDg _0T1Ccl5pEeinldGX_T-NDg">
+    <ownedEnd xmi:id="_0T1CcV5pEeinldGX_T-NDg" type="_SK25YF5mEeinldGX_T-NDg" association="_0T1CcF5pEeinldGX_T-NDg"/>
+    <ownedEnd xmi:id="_0T1Ccl5pEeinldGX_T-NDg" type="_LxteoF5pEeinldGX_T-NDg" association="_0T1CcF5pEeinldGX_T-NDg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3IdbUF5rEeinldGX_T-NDg" name="GameLoader" visibility="public"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_H8EicF5sEeinldGX_T-NDg" name="Game" visibility="public"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_KmWXYF5sEeinldGX_T-NDg" name="Sudoku" visibility="public"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_NubioF5sEeinldGX_T-NDg" name="Solution" visibility="public"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_RtCGMF5sEeinldGX_T-NDg" name="SudokuSolver" visibility="public"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XuR28F5sEeinldGX_T-NDg" name="Timer" visibility="public"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_sT3a4F5sEeinldGX_T-NDg" name="EntryChecker" visibility="public"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_weiEgF5sEeinldGX_T-NDg" name="Has a" memberEnd="_weiEgV5sEeinldGX_T-NDg _weiEhF5sEeinldGX_T-NDg" navigableOwnedEnd="_weiEgV5sEeinldGX_T-NDg _weiEhF5sEeinldGX_T-NDg">
+    <ownedEnd xmi:id="_weiEgV5sEeinldGX_T-NDg" name="games" type="_H8EicF5sEeinldGX_T-NDg" association="_weiEgF5sEeinldGX_T-NDg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_weiEgl5sEeinldGX_T-NDg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_weiEg15sEeinldGX_T-NDg" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_weiEhF5sEeinldGX_T-NDg" name="gameLoaders" type="_3IdbUF5rEeinldGX_T-NDg" association="_weiEgF5sEeinldGX_T-NDg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_weiEhV5sEeinldGX_T-NDg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_weiEhl5sEeinldGX_T-NDg" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_3TB3IF5sEeinldGX_T-NDg" memberEnd="_3TB3IV5sEeinldGX_T-NDg _3TB3JF5sEeinldGX_T-NDg" navigableOwnedEnd="_3TB3IV5sEeinldGX_T-NDg _3TB3JF5sEeinldGX_T-NDg">
+    <ownedEnd xmi:id="_3TB3IV5sEeinldGX_T-NDg" name="games" type="_H8EicF5sEeinldGX_T-NDg" association="_3TB3IF5sEeinldGX_T-NDg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3TB3Il5sEeinldGX_T-NDg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3TB3I15sEeinldGX_T-NDg" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_3TB3JF5sEeinldGX_T-NDg" name="timers" type="_XuR28F5sEeinldGX_T-NDg" association="_3TB3IF5sEeinldGX_T-NDg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3TB3JV5sEeinldGX_T-NDg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3TB3Jl5sEeinldGX_T-NDg" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4S8cAF5sEeinldGX_T-NDg" memberEnd="_4S8cAV5sEeinldGX_T-NDg _4S8cBF5sEeinldGX_T-NDg" navigableOwnedEnd="_4S8cAV5sEeinldGX_T-NDg _4S8cBF5sEeinldGX_T-NDg">
+    <ownedEnd xmi:id="_4S8cAV5sEeinldGX_T-NDg" name="games" type="_H8EicF5sEeinldGX_T-NDg" association="_4S8cAF5sEeinldGX_T-NDg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4S8cAl5sEeinldGX_T-NDg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4S8cA15sEeinldGX_T-NDg" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_4S8cBF5sEeinldGX_T-NDg" name="entryCheckers" type="_sT3a4F5sEeinldGX_T-NDg" association="_4S8cAF5sEeinldGX_T-NDg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4S8cBV5sEeinldGX_T-NDg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4S8cBl5sEeinldGX_T-NDg" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_5ZaU0F5sEeinldGX_T-NDg" memberEnd="_5ZaU0V5sEeinldGX_T-NDg _5ZaU1F5sEeinldGX_T-NDg" navigableOwnedEnd="_5ZaU0V5sEeinldGX_T-NDg _5ZaU1F5sEeinldGX_T-NDg">
+    <ownedEnd xmi:id="_5ZaU0V5sEeinldGX_T-NDg" name="sudokuSolvers" type="_RtCGMF5sEeinldGX_T-NDg" association="_5ZaU0F5sEeinldGX_T-NDg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ZaU0l5sEeinldGX_T-NDg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ZaU015sEeinldGX_T-NDg" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_5ZaU1F5sEeinldGX_T-NDg" name="entryCheckers" type="_sT3a4F5sEeinldGX_T-NDg" association="_5ZaU0F5sEeinldGX_T-NDg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5ZaU1V5sEeinldGX_T-NDg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ZaU1l5sEeinldGX_T-NDg" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_6Us4YF5sEeinldGX_T-NDg" memberEnd="_6Us4YV5sEeinldGX_T-NDg _6Us4ZF5sEeinldGX_T-NDg" navigableOwnedEnd="_6Us4YV5sEeinldGX_T-NDg _6Us4ZF5sEeinldGX_T-NDg">
+    <ownedEnd xmi:id="_6Us4YV5sEeinldGX_T-NDg" name="gameLoaders" type="_3IdbUF5rEeinldGX_T-NDg" association="_6Us4YF5sEeinldGX_T-NDg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6Us4Yl5sEeinldGX_T-NDg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6Us4Y15sEeinldGX_T-NDg" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_6Us4ZF5sEeinldGX_T-NDg" name="entryCheckers" type="_sT3a4F5sEeinldGX_T-NDg" association="_6Us4YF5sEeinldGX_T-NDg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6Us4ZV5sEeinldGX_T-NDg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6Us4Zl5sEeinldGX_T-NDg" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_6-RZ0F5sEeinldGX_T-NDg" memberEnd="_6-RZ0V5sEeinldGX_T-NDg _6-RZ1F5sEeinldGX_T-NDg" navigableOwnedEnd="_6-RZ0V5sEeinldGX_T-NDg _6-RZ1F5sEeinldGX_T-NDg">
+    <ownedEnd xmi:id="_6-RZ0V5sEeinldGX_T-NDg" name="sudokus" type="_KmWXYF5sEeinldGX_T-NDg" association="_6-RZ0F5sEeinldGX_T-NDg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6-RZ0l5sEeinldGX_T-NDg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6-RZ015sEeinldGX_T-NDg" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_6-RZ1F5sEeinldGX_T-NDg" name="games" type="_H8EicF5sEeinldGX_T-NDg" association="_6-RZ0F5sEeinldGX_T-NDg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6-RZ1V5sEeinldGX_T-NDg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6-RZ1l5sEeinldGX_T-NDg" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7mDLgF5sEeinldGX_T-NDg" memberEnd="_7mDLgV5sEeinldGX_T-NDg _7mDLhF5sEeinldGX_T-NDg" navigableOwnedEnd="_7mDLgV5sEeinldGX_T-NDg _7mDLhF5sEeinldGX_T-NDg">
+    <ownedEnd xmi:id="_7mDLgV5sEeinldGX_T-NDg" name="solutions" type="_NubioF5sEeinldGX_T-NDg" association="_7mDLgF5sEeinldGX_T-NDg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7mDLgl5sEeinldGX_T-NDg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7mDLg15sEeinldGX_T-NDg" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_7mDLhF5sEeinldGX_T-NDg" name="sudokus" type="_KmWXYF5sEeinldGX_T-NDg" association="_7mDLgF5sEeinldGX_T-NDg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7mDLhV5sEeinldGX_T-NDg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7mDLhl5sEeinldGX_T-NDg" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_8Qf2sF5sEeinldGX_T-NDg" memberEnd="_8Qf2sV5sEeinldGX_T-NDg _8Qf2tF5sEeinldGX_T-NDg" navigableOwnedEnd="_8Qf2sV5sEeinldGX_T-NDg _8Qf2tF5sEeinldGX_T-NDg">
+    <ownedEnd xmi:id="_8Qf2sV5sEeinldGX_T-NDg" name="solutions" type="_NubioF5sEeinldGX_T-NDg" association="_8Qf2sF5sEeinldGX_T-NDg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8Qf2sl5sEeinldGX_T-NDg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8Qf2s15sEeinldGX_T-NDg" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_8Qf2tF5sEeinldGX_T-NDg" name="entryCheckers" type="_sT3a4F5sEeinldGX_T-NDg" association="_8Qf2sF5sEeinldGX_T-NDg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8Qf2tV5sEeinldGX_T-NDg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8Qf2tl5sEeinldGX_T-NDg" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_h7Ga0F5tEeinldGX_T-NDg" name="Visualization" visibility="public"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_nsjcEF5tEeinldGX_T-NDg" memberEnd="_nsjcEV5tEeinldGX_T-NDg _nsjcFF5tEeinldGX_T-NDg" navigableOwnedEnd="_nsjcEV5tEeinldGX_T-NDg _nsjcFF5tEeinldGX_T-NDg">
+    <ownedEnd xmi:id="_nsjcEV5tEeinldGX_T-NDg" name="games" type="_H8EicF5sEeinldGX_T-NDg" association="_nsjcEF5tEeinldGX_T-NDg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nsjcEl5tEeinldGX_T-NDg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nsjcE15tEeinldGX_T-NDg" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_nsjcFF5tEeinldGX_T-NDg" name="visualizations" type="_h7Ga0F5tEeinldGX_T-NDg" association="_nsjcEF5tEeinldGX_T-NDg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nsjcFV5tEeinldGX_T-NDg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nsjcFl5tEeinldGX_T-NDg" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>
