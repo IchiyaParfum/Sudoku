@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_6Ish0GGPEeiM5p1c1fN1aw" name="Sudoku">
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_9bOCgGGPEeiM5p1c1fN1aw" name="Interaction1">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="__sKKYGGPEeiM5p1c1fN1aw" name="User"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_Q8YVAGGQEeiM5p1c1fN1aw" name="System"/>
+  </packagedElement>
+</uml:Model>

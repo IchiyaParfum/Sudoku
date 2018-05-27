@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_9o-xsGGPEeiM5p1c1fN1aw" type="PapyrusUMLSequenceDiagram" name="NewSequenceDiagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_9o-xsWGPEeiM5p1c1fN1aw" type="Interaction_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_9o-xsmGPEeiM5p1c1fN1aw" type="Interaction_NameLabel"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_9o_YwGGPEeiM5p1c1fN1aw" type="Interaction_SubfragmentCompartment">
+      <children xmi:type="notation:Shape" xmi:id="__szqoGGPEeiM5p1c1fN1aw" type="Lifeline_Shape">
+        <children xmi:type="notation:DecorationNode" xmi:id="__s2t8GGPEeiM5p1c1fN1aw" type="Lifeline_NameLabel"/>
+        <element xmi:type="uml:Lifeline" href="Sudoku.uml#__sKKYGGPEeiM5p1c1fN1aw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="__szqoWGPEeiM5p1c1fN1aw" x="54" y="10" height="700"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_Q8eboGGQEeiM5p1c1fN1aw" type="Lifeline_Shape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_Q8fCsGGQEeiM5p1c1fN1aw" type="Lifeline_NameLabel"/>
+        <element xmi:type="uml:Lifeline" href="Sudoku.uml#_Q8YVAGGQEeiM5p1c1fN1aw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Q8eboWGQEeiM5p1c1fN1aw" x="414" y="10" height="700"/>
+      </children>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9o_YwWGPEeiM5p1c1fN1aw"/>
+    </children>
+    <element xmi:type="uml:Interaction" href="Sudoku.uml#_9bOCgGGPEeiM5p1c1fN1aw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9o_YwmGPEeiM5p1c1fN1aw"/>
+  </children>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_9o_Yw2GPEeiM5p1c1fN1aw" name="diagram_compatibility_version" stringValue="1.3.0"/>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_9o_YxGGPEeiM5p1c1fN1aw"/>
+  <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_9o_YxWGPEeiM5p1c1fN1aw" diagramKindId="org.eclipse.papyrus.uml.diagram.sequence">
+    <owner xmi:type="uml:Model" href="Sudoku.uml#_6Ish0GGPEeiM5p1c1fN1aw"/>
+  </styles>
+  <element xmi:type="uml:Interaction" href="Sudoku.uml#_9bOCgGGPEeiM5p1c1fN1aw"/>
+</notation:Diagram>
