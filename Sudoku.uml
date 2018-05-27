@@ -1,7 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_6Ish0GGPEeiM5p1c1fN1aw" name="Sudoku">
-  <packagedElement xmi:type="uml:Interaction" xmi:id="_9bOCgGGPEeiM5p1c1fN1aw" name="Interaction1">
-    <lifeline xmi:type="uml:Lifeline" xmi:id="__sKKYGGPEeiM5p1c1fN1aw" name="User"/>
-    <lifeline xmi:type="uml:Lifeline" xmi:id="_Q8YVAGGQEeiM5p1c1fN1aw" name="System"/>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_fGOAsGGUEeinw830572QJw" name="Sudoku">
+  <packagedElement xmi:type="uml:Class" xmi:id="_fsjn8GGUEeinw830572QJw" name="Game"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jpPf8GGUEeinw830572QJw" name="Gui"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_kyMsEGGUEeinw830572QJw" name="displays" memberEnd="_kySLoGGUEeinw830572QJw _kyVO8GGUEeinw830572QJw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kyPvYGGUEeinw830572QJw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kyPvYWGUEeinw830572QJw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_kySLoGGUEeinw830572QJw" name="class2" type="_jpPf8GGUEeinw830572QJw" association="_kyMsEGGUEeinw830572QJw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_kyVO8GGUEeinw830572QJw" name="class1" type="_fsjn8GGUEeinw830572QJw" association="_kyMsEGGUEeinw830572QJw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0lVNoGGUEeinw830572QJw" name="Solver"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_6KzoYGGUEeinw830572QJw" name="Cell"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="__zdS8GGUEeinw830572QJw" name="Sudoku"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SpFVIGGVEeinw830572QJw" name="solves" memberEnd="_SpF8MmGVEeinw830572QJw _SpHKUGGVEeinw830572QJw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SpF8MGGVEeinw830572QJw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SpF8MWGVEeinw830572QJw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SpF8MmGVEeinw830572QJw" name="sudoku" type="__zdS8GGUEeinw830572QJw" association="_SpFVIGGVEeinw830572QJw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SpHKUGGVEeinw830572QJw" name="solver" type="_0lVNoGGUEeinw830572QJw" association="_SpFVIGGVEeinw830572QJw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_bH6ioGGVEeinw830572QJw" name="made of" memberEnd="_bH7wwGGVEeinw830572QJw _bH_bIGGVEeinw830572QJw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bH7JsGGVEeinw830572QJw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bH7JsWGVEeinw830572QJw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_bH7wwGGVEeinw830572QJw" name="sudoku" type="__zdS8GGUEeinw830572QJw" association="_bH6ioGGVEeinw830572QJw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_bH_bIGGVEeinw830572QJw" name="cell" type="_6KzoYGGUEeinw830572QJw" association="_bH6ioGGVEeinw830572QJw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_hvGSAGGVEeinw830572QJw" name="uses" memberEnd="_hvHgIGGVEeinw830572QJw _hvIHMGGVEeinw830572QJw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hvG5EGGVEeinw830572QJw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hvG5EWGVEeinw830572QJw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_hvHgIGGVEeinw830572QJw" name="game" type="_fsjn8GGUEeinw830572QJw" association="_hvGSAGGVEeinw830572QJw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_hvIHMGGVEeinw830572QJw" name="sudoku" type="__zdS8GGUEeinw830572QJw" association="_hvGSAGGVEeinw830572QJw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ldHb4GGVEeinw830572QJw" name="Loader"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_nVn1oGGVEeinw830572QJw" name="loads/saves" memberEnd="_nVpq0GGVEeinw830572QJw _nV14EGGVEeinw830572QJw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nVocsGGVEeinw830572QJw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nVpDwGGVEeinw830572QJw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_nVpq0GGVEeinw830572QJw" name="game" type="_fsjn8GGUEeinw830572QJw" association="_nVn1oGGVEeinw830572QJw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_nV14EGGVEeinw830572QJw" name="loader" type="_ldHb4GGVEeinw830572QJw" association="_nVn1oGGVEeinw830572QJw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_GWd3gGGWEeinw830572QJw" name="Timer"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HryEoGGWEeinw830572QJw" name="starts" memberEnd="_Hrz50WGWEeinw830572QJw _Hr1H8GGWEeinw830572QJw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HrzSwGGWEeinw830572QJw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Hrz50GGWEeinw830572QJw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Hrz50WGWEeinw830572QJw" name="timer" type="_GWd3gGGWEeinw830572QJw" association="_HryEoGGWEeinw830572QJw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Hr1H8GGWEeinw830572QJw" name="game" type="_fsjn8GGUEeinw830572QJw" association="_HryEoGGWEeinw830572QJw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lDMqkGGWEeinw830572QJw" name="Application"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mlinEGGWEeinw830572QJw" name="forwards events" memberEnd="_mljOImGWEeinw830572QJw _mlkcQGGWEeinw830572QJw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mljOIGGWEeinw830572QJw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mljOIWGWEeinw830572QJw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_mljOImGWEeinw830572QJw" name="application" type="_lDMqkGGWEeinw830572QJw" association="_mlinEGGWEeinw830572QJw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_mlkcQGGWEeinw830572QJw" name="gui" type="_jpPf8GGUEeinw830572QJw" association="_mlinEGGWEeinw830572QJw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_m-ergGGWEeinw830572QJw" name="manages" memberEnd="_m-fSkmGWEeinw830572QJw _m-f5oGGWEeinw830572QJw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_m-fSkGGWEeinw830572QJw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m-fSkWGWEeinw830572QJw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_m-fSkmGWEeinw830572QJw" name="game" type="_fsjn8GGUEeinw830572QJw" association="_m-ergGGWEeinw830572QJw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_m-f5oGGWEeinw830572QJw" name="application" type="_lDMqkGGWEeinw830572QJw" association="_m-ergGGWEeinw830572QJw"/>
   </packagedElement>
 </uml:Model>
